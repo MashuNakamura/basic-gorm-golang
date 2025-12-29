@@ -3,3 +3,6 @@ db/*.db
 
 # Ignore IDE/editor folders
 .idea/
+
+# Ignore built executable
+*.exe
