@@ -1,1 +1,5 @@
+# Ignore SQLite database files
 db/*.db
+
+# Ignore IDE/editor folders
+.idea/
