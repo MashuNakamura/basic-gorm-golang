@@ -1,6 +1,7 @@
 package main
 
 import (
+	"gorm-management-users/routes"
 	"log"
 
 	"github.com/gofiber/fiber/v2"
@@ -20,6 +21,9 @@ func main() {
 
 	// Initialize Fiber app
 	app := fiber.New()
+
+	// Register user routes
+	routes.UserRoutes(app, db)
 
 	// Simple ping endpoint
 	app.Get("/ping", func(c *fiber.Ctx) error {
